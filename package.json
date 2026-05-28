@@ -1,0 +1,44 @@
+{
+  "name": "introduction-to-openrouter-agents-sdk-in-typescript",
+  "version": "1.0.0",
+  "description": "Build a complete TypeScript-based course repository for OpenAI Agents SDK + OpenRouter integration",
+  "type": "module",
+ "scripts": {
+    "lesson1:basic": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-01-simple-agents/01-basic-agents.ts",
+    "lesson1:run": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 OPENAI_LOGGING_LEVEL=error tsx lessons/lesson-01-simple-agents/02-run-helper.ts",
+    "lesson1:runner-static": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-01-simple-agents/03-runner-static.ts",
+    "lesson1:runner-instance": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-01-simple-agents/04-runner-instance.ts",
+    "lesson1:stream": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-01-simple-agents/05-streaming.ts",
+    "lesson1:openrouter": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-01-simple-agents/06-openrouter-agent.ts",
+    "lesson1:solution": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-01-simple-agents/practice/solution.ts",
+    
+    "lesson2:basic": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-02-agent-results/01-basic-result-object.ts",
+    "lesson2:new-items": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-02-agent-results/02-inspect-new-items.ts",
+    "lesson2:history": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-02-agent-results/03-inspect-history.ts",
+    "lesson2:last-agent": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-02-agent-results/04-last-agent.ts",
+    "lesson2:chain": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-02-agent-results/05-chaining-agents-basic.ts",
+    "lesson2:openrouter-chain": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-02-agent-results/06-openrouter-multi-model-chain.ts",
+    
+    "lesson3:basic": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-03-multi-turn-conversations/01-basic-multi-turn.ts",
+    "lesson3:inspect-history": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-03-multi-turn-conversations/02-history-inspection.ts",
+    "lesson3:chat": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-03-multi-turn-conversations/03-dynamic-memory-loop.ts",
+    "lesson3:openrouter": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-03-multi-turn-conversations/04-openrouter-stateful-chat.ts",
+    "lesson3:solution": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-03-multi-turn-conversations/practice/solution.ts",
+    
+    "lesson4:web-search": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-04-tools/01-web-search-tool.ts",
+    "lesson4:custom-tool": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-04-tools/02-custom-function-tool.ts",
+    "lesson4:integrated": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-04-tools/03-integrated-tools.ts",
+    "lesson4:solution": "cross-env OPENAI_TELEMETRY_DISABLED=true OPENAI_AGENTS_DISABLE_TRACING=1 tsx lessons/lesson-04-tools/practice/solution.ts"
+  },
+  "dependencies": {
+    "@openai/agents": "^0.11.5",
+    "dotenv": "^17.4.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "cross-env": "^7.0.3",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3"
+  }
+}
