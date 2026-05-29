@@ -1,4 +1,4 @@
-**# The Model Context Protocol (MCP): A Beginner-Friendly Guide to Building Distributed AI Intelligence**
+# **The Model Context Protocol (MCP): A Beginner-Friendly Guide to Building Distributed AI Intelligence**
 
 The **Model Context Protocol (MCP)** is an open-standard architecture introduced by Anthropic that standardizes how AI models connect to external tools, data, and capabilities. Think of it as **USB-C for AI** — a universal plug that lets any compatible AI host talk to any compatible capability provider without custom rewiring every time.
 
